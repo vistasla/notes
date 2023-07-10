@@ -1,0 +1,1 @@
+Your branch is based on 'origin/test2', but the upstream is gone.

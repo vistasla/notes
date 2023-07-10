@@ -1,0 +1,1 @@
+Unable to find explicit activity class {com.example.myapplication/android.view.View}; have you declared this activity in your AndroidManifest.xml, or does your intent not match its declared <intent-filter>?

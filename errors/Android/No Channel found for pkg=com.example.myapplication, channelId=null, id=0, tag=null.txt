@@ -1,0 +1,1 @@
+No Channel found for pkg=com.example.myapplication, channelId=null, id=0, tag=null, opPkg=com.example.myapplication, callingUid=10157, userId=0, incomingUserId=0, notificationUid=10157, notification=Notification(channel=null shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x0 color=0x00000000 vis=PRIVATE)

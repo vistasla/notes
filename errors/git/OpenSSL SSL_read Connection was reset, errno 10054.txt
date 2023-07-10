@@ -1,0 +1,3 @@
+fatal: unable to access 'https://github.com/vistasla/test.git/': OpenSSL SSL_read: Connection was reset, errno 10054
+Pushing to https://github.com/vistasla/test.git
+

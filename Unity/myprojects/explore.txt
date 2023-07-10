@@ -1,0 +1,26 @@
+1：尾焰
+2：天空盒
+3：trees，grass
+4：npcs，动物
+5：自动开火
+6：water(flow),fire
+7：scores
+8：场景切换
+9：雨雪，雾
+10：wind
+11：fruits
+12：rock
+13：水面行驶效果
+14：受伤效果
+15：攻击效果
+16：人称切换
+17：瞄准效果
+18：道路
+19：飞行视角
+20：开门（自动开关）
+21：跨障
+22：ik
+23：拾取效果
+24：smoke
+25:rotation force rotate wheel
+26：驾驶效果

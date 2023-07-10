@@ -1,0 +1,12 @@
+Intent intent=new Intent();
+        //非必要添加,只setAction,即可调用其它应用窗口.
+        //intent.setAction(Intent.ACTION_WEB_SEARCH);
+        //intent.putExtra("QUERY","QUERY");
+        //非必要添加,只setType,无法调用其它应用窗口.会返回主窗口.
+        intent.setAction(Intent.ACTION_CALL);
+        intent.putExtra("QUERY","QUERY");
+        //intent.setType("text/plain");
+        //intent.setType("image/png");
+        //非必要添加,只setAction和addCategory,即可调用其它应用窗口.只addCategory,无法调用其它应用窗口.
+        //intent.addCategory(CATEGORY_APP_BROWSER);
+        startActivity(intent);

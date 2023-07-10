@@ -1,0 +1,9 @@
+$ git push -u origin test2
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'test2' on GitHub by visiting:
+remote:      https://github.com/vistasla/test/pull/new/test2
+remote:
+To https://github.com/vistasla/test.git
+ * [new branch]      test2 -> test2
+Branch 'test2' set up to track remote branch 'test2' from 'origin'.

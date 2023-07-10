@@ -1,0 +1,13 @@
+FATAL EXCEPTION: main
+                                                                                                    Process: com.example.myapplication, PID: 5407
+                                                                                                    android.app.RemoteServiceException$CannotPostForegroundServiceNotificationException: Bad notification for startForeground
+                                                                                                    	at android.app.ActivityThread.throwRemoteServiceException(ActivityThread.java:1983)
+                                                                                                    	at android.app.ActivityThread.-$$Nest$mthrowRemoteServiceException(Unknown Source:0)
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2242)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201)
+                                                                                                    	at android.os.Looper.loop(Looper.java:288)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:7898)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)

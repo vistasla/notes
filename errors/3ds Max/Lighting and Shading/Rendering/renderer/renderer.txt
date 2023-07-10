@@ -1,0 +1,1 @@
+Scanline Renderer and Arnold which supports Matte/Shadow Material  best?seems Scanline Renderer .

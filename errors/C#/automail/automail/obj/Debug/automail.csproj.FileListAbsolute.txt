@@ -1,0 +1,8 @@
+C:\Users\pujing\eclipse-workspace\C#\automail\bin\Debug\automail.exe.config
+C:\Users\pujing\eclipse-workspace\C#\automail\bin\Debug\automail.exe
+C:\Users\pujing\eclipse-workspace\C#\automail\bin\Debug\automail.pdb
+C:\Users\pujing\eclipse-workspace\C#\automail\obj\Debug\automail.csprojAssemblyReference.cache
+C:\Users\pujing\eclipse-workspace\C#\automail\obj\Debug\automail.Properties.Resources.resources
+C:\Users\pujing\eclipse-workspace\C#\automail\obj\Debug\automail.csproj.GenerateResource.cache
+C:\Users\pujing\eclipse-workspace\C#\automail\obj\Debug\automail.exe
+C:\Users\pujing\eclipse-workspace\C#\automail\obj\Debug\automail.pdb

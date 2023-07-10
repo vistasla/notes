@@ -1,0 +1,1 @@
+Caused by: java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.CALL dat=tel:xxxxxxxxxx cmp=com.android.server.telecom/.components.UserCallActivity } from ProcessRecord{230e4ef 8054:com.example.myapplication/u0a157} (pid=8054, uid=10157) with revoked permission android.permission.CALL_PHONE

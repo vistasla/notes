@@ -1,0 +1,1 @@
+即使位于后台也处于isRunning=true,只有位于前台时isFocused=true.

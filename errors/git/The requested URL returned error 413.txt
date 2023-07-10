@@ -1,0 +1,7 @@
+POST git-receive-pack (chunked)
+error: RPC failed; HTTP 413 curl 22 The requested URL returned error: 413
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Pushing to https://gitee.com/haoxiaodong1991/myprojects.git
+Everything up-to-date
+

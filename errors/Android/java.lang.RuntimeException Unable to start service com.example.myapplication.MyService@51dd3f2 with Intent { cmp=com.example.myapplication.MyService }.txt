@@ -1,0 +1,75 @@
+
+11/26 22:47:55: Launching 'Unnamed' on Pixel_3a_API_33_x86_64.
+Install successfully finished in 1 s 255 ms.
+$ adb shell am start -n "com.example.myapplication/com.example.myapplication.MainActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Connected to process 4957 on device 'Pixel_3a_API_33_x86_64 [emulator-5556]'.
+Capturing and displaying logcat messages from application. This behavior can be disabled in the "Logcat output" section of the "Debugger" settings page.
+I/e.myapplication: Late-enabling -Xcheck:jni
+W/e.myapplication: Unexpected CPU variant for x86: x86_64.
+    Known variants: atom, sandybridge, silvermont, kabylake, default
+D/CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10157; state: ENABLED
+W/ziparchive: Unable to open '/data/app/~~31jvQttab3Gr2914QhXUoQ==/com.example.myapplication-MYcNINffzr-KujPsxMaM8w==/base.dm': No such file or directory
+W/ziparchive: Unable to open '/data/app/~~31jvQttab3Gr2914QhXUoQ==/com.example.myapplication-MYcNINffzr-KujPsxMaM8w==/base.dm': No such file or directory
+V/GraphicsEnvironment: ANGLE Developer option for 'com.example.myapplication' set to: 'default'
+V/GraphicsEnvironment: ANGLE GameManagerService for com.example.myapplication: false
+V/GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+D/NetworkSecurityConfig: No Network Security Config specified, using platform default
+D/NetworkSecurityConfig: No Network Security Config specified, using platform default
+D/libEGL: loaded /vendor/lib64/egl/libEGL_emulation.so
+D/libEGL: loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+D/libEGL: loaded /vendor/lib64/egl/libGLESv2_emulation.so
+W/e.myapplication: Verification of androidx.fragment.app.FragmentManagerNonConfig androidx.fragment.app.FragmentManagerViewModel.getSnapshot() took 117.069ms (1050.66 bytecodes/s) (3536B approximate peak alloc)
+W/e.myapplication: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+W/e.myapplication: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+D/CompatibilityChangeReporter: Compat change id reported: 210923482; UID 10157; state: DISABLED
+D/CompatibilityChangeReporter: Compat change id reported: 37756858; UID 10157; state: ENABLED
+D/HostConnection: createUnique: call
+D/HostConnection: HostConnection::get() New Host Connection established 0x727681aeff90, tid 5008
+D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+W/OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+W/OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+D/EGL_emulation: eglCreateContext: 0x727681af1490: maj 2 min 0 rcv 2
+D/EGL_emulation: eglMakeCurrent: 0x727681af1490: ver 2 0 (tinfo 0x7278a2eb8080) (first time)
+I/Gralloc4: mapper 4.x is not supported
+D/HostConnection: createUnique: call
+D/HostConnection: HostConnection::get() New Host Connection established 0x727681af0a10, tid 5008
+D/goldfish-address-space: allocate: Ask for block of size 0x100
+D/goldfish-address-space: allocate: ioctl allocate returned offset 0x3f3ffe000 size 0x2000
+W/Gralloc4: allocator 4.x is not supported
+D/HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+W/Parcel: Expecting binder but got null!
+I/Choreographer: Skipped 33 frames!  The application may be doing too much work on its main thread.
+D/EGL_emulation: app_time_stats: avg=596.04ms min=7.63ms max=5771.60ms count=11
+D/AndroidRuntime: Shutting down VM
+    
+    
+    --------- beginning of crash
+E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: com.example.myapplication, PID: 4957
+    java.lang.RuntimeException: Unable to start service com.example.myapplication.MyService@51dd3f2 with Intent { cmp=com.example.myapplication/.MyService }: android.util.AndroidRuntimeException: Calling startActivity() from outside of an Activity  context requires the FLAG_ACTIVITY_NEW_TASK flag. Is this really what you want?
+        at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:4703)
+        at android.app.ActivityThread.-$$Nest$mhandleServiceArgs(Unknown Source:0)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2181)
+        at android.os.Handler.dispatchMessage(Handler.java:106)
+        at android.os.Looper.loopOnce(Looper.java:201)
+        at android.os.Looper.loop(Looper.java:288)
+        at android.app.ActivityThread.main(ActivityThread.java:7898)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+     Caused by: android.util.AndroidRuntimeException: Calling startActivity() from outside of an Activity  context requires the FLAG_ACTIVITY_NEW_TASK flag. Is this really what you want?
+        at android.app.ContextImpl.startActivity(ContextImpl.java:1096)
+        at android.app.ContextImpl.startActivity(ContextImpl.java:1072)
+        at android.content.ContextWrapper.startActivity(ContextWrapper.java:432)
+        at com.example.myapplication.MyService.onStartCommand(MyService.java:24)
+        at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:4685)
+        at android.app.ActivityThread.-$$Nest$mhandleServiceArgs(Unknown Source:0) 
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2181) 
+        at android.os.Handler.dispatchMessage(Handler.java:106) 
+        at android.os.Looper.loopOnce(Looper.java:201) 
+        at android.os.Looper.loop(Looper.java:288) 
+        at android.app.ActivityThread.main(ActivityThread.java:7898) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936) 
+I/Process: Sending signal. PID: 4957 SIG: 9

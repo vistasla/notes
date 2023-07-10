@@ -1,0 +1,24 @@
+$ git config --unset remote "test".url
+error: key does not contain a section: remote
+
+git config --local
+git config -l
+git config [--local]
+git config -e
+git config --local
+git config --get
+git config --get-all
+git config [–local|–global|–system] –add section.key value
+git config –local –add remote.url https://github.com/vistasla/test.git
+git config –local –add url1 https://github.com/vistasla/test.git
+ --get                 get value: name [value-regex]
+    --get-all  
+ --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]

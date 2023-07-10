@@ -1,0 +1,1 @@
+WhenMetalness is 0.0,the base weight and color defines the material's diffuse reflectance. ?The reflective layer that has the reflection weight and color (only shown in Advanced parameter mode) with the weight multiplied by the angular function. 

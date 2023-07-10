@@ -1,0 +1,137 @@
+
+1126 232847 Launching 'Unnamed' on Pixel_3a_API_33_x86_64.
+Install successfully finished in 428 ms.
+$ adb shell am start -n com.example.myapplicationcom.example.myapplication.MainActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+Connected to process 7591 on device 'Pixel_3a_API_33_x86_64 [emulator-5556]'.
+Capturing and displaying logcat messages from application. This behavior can be disabled in the Logcat output section of the Debugger settings page.
+Ie.myapplication Late-enabling -Xcheckjni
+We.myapplication Unexpected CPU variant for x86 x86_64.
+    Known variants atom, sandybridge, silvermont, kabylake, default
+Vstudio.deploy Startup agent attached to VM
+Vstudio.deploy No existing instrumentation found. Loading instrumentation from instruments-6b5afa68.jar
+Wre-initialized type=1400 audit(0.045) avc granted { execute } for path=datadatacom.example.myapplicationcode_cachestartup_agents69880af5-agent.so dev=dm-33 ino=139387 scontext=uruntrusted_apps0c157,c256,c512,c768 tcontext=uobject_rapp_data_files0c157,c256,c512,c768 tclass=file app=com.example.myapplication
+We.myapplication DexFile datadatacom.example.myapplicationcode_cache.studioinstruments-6b5afa68.jar is in boot class path but is not in a known location
+Vstudio.deploy Applying transforms with cached classes
+We.myapplication Redefining intrinsic method java.lang.Thread java.lang.Thread.currentThread(). This may cause the unexpected use of the original definition of java.lang.Thread java.lang.Thread.currentThread()in methods that have already been compiled.
+We.myapplication Redefining intrinsic method boolean java.lang.Thread.interrupted(). This may cause the unexpected use of the original definition of boolean java.lang.Thread.interrupted()in methods that have already been compiled.
+DCompatibilityChangeReporter Compat change id reported 171979766; UID 10157; state ENABLED
+Wziparchive Unable to open 'datadatacom.example.myapplicationcode_cache.overlaybase.apkclasses3.dm' No such file or directory
+Wziparchive Unable to open 'dataapp~~31jvQttab3Gr2914QhXUoQ==com.example.myapplication-MYcNINffzr-KujPsxMaM8w==base.dm' No such file or directory
+Wziparchive Unable to open 'dataapp~~31jvQttab3Gr2914QhXUoQ==com.example.myapplication-MYcNINffzr-KujPsxMaM8w==base.dm' No such file or directory
+VGraphicsEnvironment ANGLE Developer option for 'com.example.myapplication' set to 'default'
+VGraphicsEnvironment ANGLE GameManagerService for com.example.myapplication false
+VGraphicsEnvironment Neither updatable production driver nor prerelease driver is supported.
+DNetworkSecurityConfig No Network Security Config specified, using platform default
+DNetworkSecurityConfig No Network Security Config specified, using platform default
+DlibEGL loaded vendorlib64egllibEGL_emulation.so
+DlibEGL loaded vendorlib64egllibGLESv1_CM_emulation.so
+DlibEGL loaded vendorlib64egllibGLESv2_emulation.so
+We.myapplication Accessing hidden method LandroidviewView;-computeFitSystemWindows(LandroidgraphicsRect;LandroidgraphicsRect;)Z (unsupported, reflection, allowed)
+We.myapplication Accessing hidden method LandroidviewViewGroup;-makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+DCompatibilityChangeReporter Compat change id reported 210923482; UID 10157; state DISABLED
+DCompatibilityChangeReporter Compat change id reported 37756858; UID 10157; state ENABLED
+DHostConnection createUnique call
+DHostConnection HostConnectionget() New Host Connection established 0x727681aeff90, tid 7607
+DHostConnection HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+WOpenGLRenderer Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+WOpenGLRenderer Failed to initialize 101010-2 format, error = EGL_SUCCESS
+DEGL_emulation eglCreateContext 0x727681af1490 maj 2 min 0 rcv 2
+DEGL_emulation eglMakeCurrent 0x727681af1490 ver 2 0 (tinfo 0x7278a2d70080) (first time)
+IGralloc4 mapper 4.x is not supported
+DHostConnection createUnique call
+DHostConnection HostConnectionget() New Host Connection established 0x727681af0a10, tid 7607
+Dgoldfish-address-space allocate Ask for block of size 0x100
+Dgoldfish-address-space allocate ioctl allocate returned offset 0x3efffe000 size 0x2000
+WGralloc4 allocator 4.x is not supported
+DHostConnection HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+WParcel Expecting binder but got null!
+IOpenGLRenderer Davey! duration=1292ms; Flags=1, FrameTimelineVsyncId=43114, IntendedVsync=3063046293276, Vsync=3063096293274, InputEventId=0, HandleInputStart=3063103057900, AnimationStart=3063103084500, PerformTraversalsStart=3063103122600, DrawStart=3063912048400, FrameDeadline=3063062959942, FrameInterval=3063103005000, FrameStartTime=16666666, SyncQueued=3064174381900, SyncStart=3064205573100, IssueDrawCommandsStart=3064210420300, SwapBuffers=3064357678400, FrameCompleted=3064369605800, DequeueBufferDuration=31300, QueueBufferDuration=5175500, GpuCompleted=3064369409000, SwapBuffersCompleted=3064369605800, DisplayPresentTime=0, CommandSubmissionCompleted=3064357678400, 
+IChoreographer Skipped 111 frames!  The application may be doing too much work on its main thread.
+IOpenGLRenderer Davey! duration=1916ms; Flags=0, FrameTimelineVsyncId=43137, IntendedVsync=3063129626606, Vsync=3064979626532, InputEventId=0, HandleInputStart=3064991515700, AnimationStart=3064991544500, PerformTraversalsStart=3065013816600, DrawStart=3065022140500, FrameDeadline=3063162959938, FrameInterval=3064991249900, FrameStartTime=16666666, SyncQueued=3065023122100, SyncStart=3065023225500, IssueDrawCommandsStart=3065023316700, SwapBuffers=3065035640000, FrameCompleted=3065046540600, DequeueBufferDuration=30100, QueueBufferDuration=4129300, GpuCompleted=3065046369600, SwapBuffersCompleted=3065046540600, DisplayPresentTime=0, CommandSubmissionCompleted=3065035640000, 
+DEGL_emulation app_time_stats avg=343.25ms min=16.17ms max=1382.37ms count=7
+DAndroidRuntime Shutting down VM
+EAndroidRuntime FATAL EXCEPTION main
+    Process com.example.myapplication, PID 7591
+    java.lang.IllegalStateException Could not execute method for androidonClick
+        at androidx.appcompat.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java446)
+        at android.view.View.performClick(View.java7506)
+        at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java1131)
+        at android.view.View.performClickInternal(View.java7483)
+        at android.view.View.-$$Nest$mperformClickInternal(Unknown Source0)
+        at android.view.View$PerformClick.run(View.java29335)
+        at android.os.Handler.handleCallback(Handler.java942)
+        at android.os.Handler.dispatchMessage(Handler.java99)
+        at android.os.Looper.loopOnce(Looper.java201)
+        at android.os.Looper.loop(Looper.java288)
+        at android.app.ActivityThread.main(ActivityThread.java7898)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java548)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java936)
+     Caused by java.lang.reflect.InvocationTargetException
+        at java.lang.reflect.Method.invoke(Native Method)
+        at androidx.appcompat.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java441)
+        at android.view.View.performClick(View.java7506) 
+        at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java1131) 
+        at android.view.View.performClickInternal(View.java7483) 
+        at android.view.View.-$$Nest$mperformClickInternal(Unknown Source0) 
+        at android.view.View$PerformClick.run(View.java29335) 
+        at android.os.Handler.handleCallback(Handler.java942) 
+        at android.os.Handler.dispatchMessage(Handler.java99) 
+        at android.os.Looper.loopOnce(Looper.java201) 
+        at android.os.Looper.loop(Looper.java288) 
+        at android.app.ActivityThread.main(ActivityThread.java7898) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java548) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java936) 
+     Caused by java.io.FileNotFoundException ressourcefileinputjava_input.exe open failed ENOENT (No such file or directory)
+        at libcore.io.IoBridge.open(IoBridge.java574)
+        at java.io.FileInputStream.init(FileInputStream.java160)
+        at com.example.myapplication.FileInput.init(FileInput.java18)
+        at com.example.myapplication.MainActivity.sendMessage(MainActivity.java34)
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at androidx.appcompat.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java441) 
+        at android.view.View.performClick(View.java7506) 
+        at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java1131) 
+        at android.view.View.performClickInternal(View.java7483) 
+        at android.view.View.-$$Nest$mperformClickInternal(Unknown Source0) 
+        at android.view.View$PerformClick.run(View.java29335) 
+        at android.os.Handler.handleCallback(Handler.java942) 
+        at android.os.Handler.dispatchMessage(Handler.java99) 
+        at android.os.Looper.loopOnce(Looper.java201) 
+        at android.os.Looper.loop(Looper.java288) 
+        at android.app.ActivityThread.main(ActivityThread.java7898) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java548) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java936) 
+     Caused by android.system.ErrnoException open failed ENOENT (No such file or directory)
+        at libcore.io.Linux.open(Native Method)
+        at libcore.io.ForwardingOs.open(ForwardingOs.java563)
+        at libcore.io.BlockGuardOs.open(BlockGuardOs.java274)
+        at libcore.io.ForwardingOs.open(ForwardingOs.java563)
+        at android.app.ActivityThread$AndroidOs.open(ActivityThread.java7784)
+        at libcore.io.IoBridge.open(IoBridge.java560)
+        at java.io.FileInputStream.init(FileInputStream.java160) 
+        at com.example.myapplication.FileInput.init(FileInput.java18) 
+        at com.example.myapplication.MainActivity.sendMessage(MainActivity.java34) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at androidx.appcompat.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java441) 
+        at android.view.View.performClick(View.java7506) 
+        at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java1131) 
+        at android.view.View.performClickInternal(View.java7483) 
+        at android.view.View.-$$Nest$mperformClickInternal(Unknown Source0) 
+        at android.view.View$PerformClick.run(View.java29335) 
+        at android.os.Handler.handleCallback(Handler.java942) 
+        at android.os.Handler.dispatchMessage(Handler.java99) 
+        at android.os.Looper.loopOnce(Looper.java201) 
+        at android.os.Looper.loop(Looper.java288) 
+        at android.app.ActivityThread.main(ActivityThread.java7898) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java548) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java936) 
+DEGL_emulation app_time_stats avg=37.11ms min=5.49ms max=119.33ms count=26
+DEGL_emulation app_time_stats avg=16.33ms min=2.41ms max=95.80ms count=39
+DEGL_emulation app_time_stats avg=10.31ms min=2.46ms max=36.14ms count=58
+DEGL_emulation app_time_stats avg=4.91ms min=2.62ms max=9.26ms count=60
+DEGL_emulation app_time_stats avg=5.43ms min=2.47ms max=15.09ms count=61
+DEGL_emulation app_time_stats avg=10.32ms min=3.40ms max=21.77ms count=60
+WSystem A resource failed to call close. 

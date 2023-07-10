@@ -1,0 +1,235 @@
+﻿mysqld --console --skip-grant-tables --shared-memory;
+
+2020-01-07T11:14:49.621969Z 0 [System] [MY-010116] [Server] C:\Program Files\MyS
+QL\MySQL Cluster 8.0\bin\mysqld.exe (mysqld 8.0.17-cluster) starting as process
+7116
+2020-01-07T11:14:49.642970Z 1 [ERROR] [MY-012271] [InnoDB] The innodb_system dat
+a file 'ibdata1' must be writable
+2020-01-07T11:14:49.643971Z 0 [ERROR] [MY-010119] [Server] Aborting
+2020-01-07T11:14:49.644971Z 0 [System] [MY-010910] [Server] C:\Program Files\MyS
+QL\MySQL Cluster 8.0\bin\mysqld.exe: Shutdown complete (mysqld 8.0.17-cluster)
+MySQL Cluster Community Server - GPL.
+
+
+C:\Program Files\MySQL\MySQL Cluster 8.0\bin>mysqld --console
+2020-01-10T06:42:42.548502Z 0 [System] [MY-010116] [Server] C:\Program Files\MyS
+QL\MySQL Cluster 8.0\bin\mysqld.exe (mysqld 8.0.17-cluster) starting as process
+2812
+2020-01-10T06:42:42.558502Z 0 [Warning] [MY-010091] [Server] Can't create test f
+ile C:\Program Files\MySQL\MySQL Cluster 8.0\data\mysqld_tmp_file_case_insensiti
+ve_test.lower-test
+2020-01-10T06:42:42.568502Z 0 [ERROR] [MY-010119] [Server] Aborting
+
+net start mysql
+mysqld --initialize
+
+mysqld --iMicrosoft Windows [版本 6.1.7601]
+版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
+
+C:\Windows\System32>cd C:\Program Files\MySQL\MySQL Cluster 8.0\bin
+
+C:\Program Files\MySQL\MySQL Cluster 8.0\bin>net start mysql
+MySQL 服务正在启动 .
+MySQL 服务无法启动。
+
+服务没有报告任何错误。
+
+请键入 NET HELPMSG 3534 以获得更多的帮助。
+
+
+C:\Program Files\MySQL\MySQL Cluster 8.0\bin>net start mysql
+MySQL 服务正在启动 ..
+MySQL 服务已经启动成功。
+
+
+C:\Program Files\MySQL\MySQL Cluster 8.0\bin>mysql -u root -p
+Enter password: ******
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: Y
+ES)
+
+C:\Program Files\MySQL\MySQL Cluster 8.0\bin>netv stop mysql
+'netv' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+C:\Program Files\MySQL\MySQL Cluster 8.0\bin>net stop mysql
+MySQL 服务正在停止.
+MySQL 服务已成功停止。
+
+
+C:\Program Files\MySQL\MySQL Cluster 8.0\bin>mysqld --initialize --console
+2020-01-10T06:59:51.583455Z 0 [System] [MY-013169] [Server] C:\Program Files\MyS
+QL\MySQL Cluster 8.0\bin\mysqld.exe (mysqld 8.0.17-cluster) initializing of serv
+er in progress as process 8228
+2020-01-10T06:59:51.593455Z 0 [ERROR] [MY-010457] [Server] --initialize specifie
+d but the data directory has files in it. Aborting.
+2020-01-10T06:59:51.603455Z 0 [ERROR] [MY-010119] [Server] Aborting
+
+mysqld --init-file=C:\\mysql-init.txt --console
+cd C:\Program Files\MySQL\MySQL Cluster 8.0\bin
+update user set user='pujing' where user='root'
+ALTER USER 'pujing'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
+FLUSH PRIVILEGES;
+/*
+MySql.Data.MySqlClient.MySqlException
+  HResult=0x80004005
+  Message=Duplicate entry '3045277806' for key 'PRIMARY'
+  Source=MySqlConnector
+  StackTrace:
+   在 MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet() 在 C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs 中: 第 133 行
+   在 MySql.Data.MySqlClient.MySqlDataReader.<CreateAsync>d__95.MoveNext() 在 C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs 中: 第 405 行
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   在 MySqlConnector.Core.CommandExecutor.<ExecuteReaderAsync>d__0.MoveNext() 在 C:\projects\mysqlconnector\src\MySqlConnector\Core\CommandExecutor.cs 中: 第 62 行
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MySql.Data.MySqlClient.MySqlCommand.<ExecuteNonQueryAsync>d__69.MoveNext() 在 C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs 中: 第 220 行
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery() 在 C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs 中: 第 67 行
+   在 automail.InsertUserInfo..ctor(String strUser, Int32 intSwitcher) 在 C:\Users\pujing\eclipse-workspace\C#\automail\InsertUserInfo.cs 中: 第 17 行
+   在 automail.startwindow.button1_Click(Object sender, EventArgs e) 在 C:\Users\pujing\eclipse-workspace\C#\automail\startwindow.cs 中: 第 54 行
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 automail.Program.Main() 在 C:\Users\pujing\eclipse-workspace\C#\automail\Program.cs 中: 第 19 行
+
+内部异常 1:
+MySqlException: Duplicate entry '3045277806' for key 'PRIMARY'
+*/
+/*date:2020-03-24
+datetime:2020-03-24 18:57:08
+time:18:58:47
+timestamp:2020-03-24 18:59:51*/
+
+/*Column count doesn't match value count at row 1*/
+/*
+DELETE * FROM userinfo WHERE intSwitcher=0;
+DELETE FROM userinfo WHERE intSwitcher=0;
+*/
+ mysql transction
+START TRANSACTION ;
+update userinfo set intSwitcher=0;
+COMMIT;
+System.NullReferenceException
+  HResult=0x80004003
+  Message=未将对象引用设置到对象的实例。
+  Source=automail
+  StackTrace:
+   在 automail.TransctionTest..ctor() 在 C:\Users\pujing\eclipse-workspace\C#\automail\TransctionTest.cs 中: 第 20 行
+   在 automail.startwindow.button1_Click(Object sender, EventArgs e) 在 C:\Users\pujing\eclipse-workspace\C#\automail\startwindow.cs 中: 第 65 行
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 automail.Program.Main() 在 C:\Users\pujing\eclipse-workspace\C#\automail\Program.cs 中: 第 19 行
+
+/*
+System.InvalidOperationException
+  HResult=0x80131509
+  Message=The transaction associated with this command is not the connection's active transaction; see https://fl.vu/mysql-trans
+  Source=mscorlib
+  StackTrace:
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MySql.Data.MySqlClient.MySqlCommand.<ExecuteNonQueryAsync>d__69.MoveNext() 在 C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs 中: 第 220 行
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery() 在 C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs 中: 第 67 行
+   在 automail.TransctionTest..ctor() 在 C:\Users\pujing\eclipse-workspace\C#\automail\TransctionTest.cs 中: 第 24 行
+   在 automail.startwindow.button1_Click(Object sender, EventArgs e) 在 C:\Users\pujing\eclipse-workspace\C#\automail\startwindow.cs 中: 第 65 行
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 automail.Program.Main() 在 C:\Users\pujing\eclipse-workspace\C#\automail\Program.cs 中: 第 19 行
+
+
+*/
+/*
+MySql.Data.MySqlClient.MySqlException
+  HResult=0x80004005
+  Message=Incorrect integer value: 'null' for column 'intSwitcher' at row 1
+  Source=MySqlConnector
+  StackTrace:
+   在 MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet() 在 C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs 中: 第 133 行
+   在 MySql.Data.MySqlClient.MySqlDataReader.<CreateAsync>d__95.MoveNext() 在 C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs 中: 第 405 行
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   在 MySqlConnector.Core.CommandExecutor.<ExecuteReaderAsync>d__0.MoveNext() 在 C:\projects\mysqlconnector\src\MySqlConnector\Core\CommandExecutor.cs 中: 第 62 行
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MySql.Data.MySqlClient.MySqlCommand.<ExecuteNonQueryAsync>d__69.MoveNext() 在 C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs 中: 第 220 行
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery() 在 C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs 中: 第 67 行
+   在 automail.TransctionTest..ctor() 在 C:\Users\pujing\eclipse-workspace\C#\automail\TransctionTest.cs 中: 第 30 行
+   在 automail.startwindow.button1_Click(Object sender, EventArgs e) 在 C:\Users\pujing\eclipse-workspace\C#\automail\startwindow.cs 中: 第 65 行
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   在 System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   在 System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   在 System.Windows.Forms.Application.Run(Form mainForm)
+   在 automail.Program.Main() 在 C:\Users\pujing\eclipse-workspace\C#\automail\Program.cs 中: 第 19 行
+
+内部异常 1:
+MySqlException: Incorrect integer value: 'null' for column 'intSwitcher' at row 1
+
+
+
+*/
+
+
+
+
+/*string strMySql1 = "update userinfo set intSwitcher=Null";
+            string strMySql1 = "update userinfo set intSwitcher=null";
+            //string strMySql1 = "update userinfo set intSwitcher='Null'";
+           // string strMySql1 = "update userinfo set intSwitcher='null'";*/
+/*[ERROR] [MY-000061] [Server] 1396  Operation ALTER
+ USER failed for 'root'@'localhost'.*/

@@ -1,0 +1,105 @@
+  package com.example.myapplication;
+
+import android.content.Intent;
+import android.icu.util.Calendar;
+import android.net.Uri;
+import android.provider.AlarmClock;
+import android.provider.MediaStore;
+import android.util.Log;
+import androidx.appcompat.app.AppCompatActivity;
+import java.util.ArrayList;
+//import androidx.core.content.ContextCompat;
+
+public class CreateAlarm extends AppCompatActivity {
+    public CreateAlarm(String message, int hour, int minutes){
+        Uri uri;
+        uri = MediaStore.Images.Media.getContentUri(MediaStore.VOLUME_EXTERNAL);
+        ArrayList arrayList=new ArrayList();
+        //List list=new ArrayList();
+        arrayList.add(Calendar.FRIDAY);
+        arrayList.add(Calendar.MONDAY);
+
+        Intent intent = new Intent(AlarmClock.ACTION_SET_ALARM)
+                .putExtra(AlarmClock.EXTRA_MESSAGE, message)
+                .putExtra(AlarmClock.EXTRA_HOUR, hour)
+                .putExtra(AlarmClock.EXTRA_MINUTES, minutes)
+                .putExtra(AlarmClock.EXTRA_DAYS,arrayList)
+                /*.putExtra(AlarmClock.EXTRA_RINGTONE,uri)*/
+                .putExtra(AlarmClock.EXTRA_RINGTONE,"cesium")
+                .putExtra(AlarmClock.EXTRA_VIBRATE,true)
+                .putExtra(AlarmClock.EXTRA_SKIP_UI,false)
+                ;
+        startActivity(intent);
+       /* if (intent.resolveActivity( getPackageManager()) != null) {
+            startActivity(intent);
+
+        }else{
+            Log.d("IsAlarmClockAvailable", "false");
+
+        }*/
+
+        //ContextCompat.startActivity(intent);
+
+    }
+
+
+
+}
+
+E  FATAL EXCEPTION: main
+                                                                                                    Process: com.example.myapplication, PID: 5047
+                                                                                                    java.lang.IllegalStateException: Could not execute method for android:onClick
+                                                                                                    	at androidx.appcompat.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java:446)
+                                                                                                    	at android.view.View.performClick(View.java:7506)
+                                                                                                    	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1131)
+                                                                                                    	at android.view.View.performClickInternal(View.java:7483)
+                                                                                                    	at android.view.View.-$$Nest$mperformClickInternal(Unknown Source:0)
+                                                                                                    	at android.view.View$PerformClick.run(View.java:29335)
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:942)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:99)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201)
+                                                                                                    	at android.os.Looper.loop(Looper.java:288)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:7898)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+                                                                                                    Caused by: java.lang.reflect.InvocationTargetException
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at androidx.appcompat.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java:441)
+                                                                                                    	at android.view.View.performClick(View.java:7506) 
+                                                                                                    	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1131) 
+                                                                                                    	at android.view.View.performClickInternal(View.java:7483) 
+                                                                                                    	at android.view.View.-$$Nest$mperformClickInternal(Unknown Source:0) 
+                                                                                                    	at android.view.View$PerformClick.run(View.java:29335) 
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:942) 
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:99) 
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201) 
+                                                                                                    	at android.os.Looper.loop(Looper.java:288) 
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:7898) 
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method) 
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548) 
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936) 
+                                                                                                    Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.app.ActivityThread$ApplicationThread android.app.ActivityThread.getApplicationThread()' on a null object reference
+                                                                                                    	at android.app.Activity.startActivityForResult(Activity.java:5471)
+                                                                                                    	at androidx.activity.ComponentActivity.startActivityForResult(ComponentActivity.java:597)
+                                                                                                    	at android.app.Activity.startActivityForResult(Activity.java:5428)
+                                                                                                    	at androidx.activity.ComponentActivity.startActivityForResult(ComponentActivity.java:583)
+                                                                                                    	at android.app.Activity.startActivity(Activity.java:5926)
+                                                                                                    	at android.app.Activity.startActivity(Activity.java:5893)
+                                                                                                    	at com.example.myapplication.CreateAlarm.<init>(CreateAlarm.java:32)
+                                                                                                    	at com.example.myapplication.MainActivity.sendMessage(MainActivity.java:37)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method) 
+                                                                                                    	at androidx.appcompat.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java:441) 
+                                                                                                    	at android.view.View.performClick(View.java:7506) 
+                                                                                                    	at com.google.android.material.button.MaterialButton.performClick(MaterialButton.java:1131) 
+                                                                                                    	at android.view.View.performClickInternal(View.java:7483) 
+                                                                                                    	at android.view.View.-$$Nest$mperformClickInternal(Unknown Source:0) 
+                                                                                                    	at android.view.View$PerformClick.run(View.java:29335) 
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:942) 
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:99) 
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201) 
+                                                                                                    	at android.os.Looper.loop(Looper.java:288) 
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:7898) 
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method) 
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548) 
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936) 

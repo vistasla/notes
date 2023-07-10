@@ -1,0 +1,47 @@
+2022-12-03 22:55:40.498  6478-6503  EGL_emulation           com.example.myapplication            D  app_time_stats: avg=675.11ms min=4.64ms max=17634.73ms count=27
+2022-12-03 22:55:40.647  6478-6478  MyService               com.example.myapplication            D  onStartCommand_begin
+2022-12-03 22:55:40.648  6478-6478  begininput              com.example.myapplication            D  15
+2022-12-03 22:55:40.648  6478-6478  contents                com.example.myapplication            D  [B@9a361a
+2022-12-03 22:55:40.650  6478-6478  AndroidRuntime          com.example.myapplication            D  Shutting down VM
+2022-12-03 22:55:40.656  6478-6478  AndroidRuntime          com.example.myapplication            E  FATAL EXCEPTION: main
+                                                                                                    Process: com.example.myapplication, PID: 6478
+                                                                                                    java.lang.RuntimeException: Unable to start service com.example.myapplication.MyService@41254b with Intent { cmp=com.example.myapplication/.MyService }: java.lang.NullPointerException: println needs a message
+                                                                                                    	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:4703)
+                                                                                                    	at android.app.ActivityThread.-$$Nest$mhandleServiceArgs(Unknown Source:0)
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2181)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201)
+                                                                                                    	at android.os.Looper.loop(Looper.java:288)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:7898)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+                                                                                                    Caused by: java.lang.NullPointerException: println needs a message
+                                                                                                    	at android.util.Log.println_native(Native Method)
+                                                                                                    	at android.util.Log.d(Log.java:160)
+                                                                                                    	at com.example.myapplication.MyService.onStartCommand(MyService.java:66)
+                                                                                                    	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:4685)
+                                                                                                    	at android.app.ActivityThread.-$$Nest$mhandleServiceArgs(Unknown Source:0) 
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2181) 
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106) 
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201) 
+                                                                                                    	at android.os.Looper.loop(Looper.java:288) 
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:7898) 
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method) 
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548) 
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936) 
+2022-12-03 22:55:40.831  6478-6478  Process                 com.example.myapplication            I  Sending signal. PID: 6478 SIG: 9
+---------------------------- PROCESS ENDED (6478) for package com.example.myapplication ----------------------------
+---------------------------- PROCESS STARTED (6556) for package com.example.myapplication ----------------------------
+2022-12-03 22:55:42.183  6556-6556  Compatibil...geReporter com.example.myapplication            D  Compat change id reported: 171979766; UID 10157; state: ENABLED
+2022-12-03 22:55:42.208  6556-6556  ziparchive              com.example.myapplication            W  Unable to open '/data/data/com.example.myapplication/code_cache/.overlay/com.example.myapplication.MyService.dm': No such file or directory
+2022-12-03 22:55:42.211  6556-6556  ziparchive              com.example.myapplication            W  Unable to open '/data/data/com.example.myapplication/code_cache/.overlay/base.apk/classes3.dm': No such file or directory
+2022-12-03 22:55:42.215  6556-6556  ziparchive              com.example.myapplication            W  Unable to open '/data/app/~~DHdEBQh0qz_MEkTb92Pm5w==/com.example.myapplication-kHIE9vc-2xrAHqzU5SaRzQ==/base.dm': No such file or directory
+2022-12-03 22:55:42.215  6556-6556  ziparchive              com.example.myapplication            W  Unable to open '/data/app/~~DHdEBQh0qz_MEkTb92Pm5w==/com.example.myapplication-kHIE9vc-2xrAHqzU5SaRzQ==/base.dm': No such file or directory
+2022-12-03 22:55:42.324  6556-6556  GraphicsEnvironment     com.example.myapplication            V  ANGLE Developer option for 'com.example.myapplication' set to: 'default'
+2022-12-03 22:55:42.325  6556-6556  GraphicsEnvironment     com.example.myapplication            V  ANGLE GameManagerService for com.example.myapplication: false
+2022-12-03 22:55:42.325  6556-6556  GraphicsEnvironment     com.example.myapplication            V  Neither updatable production driver nor prerelease driver is supported.
+2022-12-03 22:55:42.345  6556-6556  NetworkSecurityConfig   com.example.myapplication            D  No Network Security Config specified, using platform default
+2022-12-03 22:55:42.347  6556-6556  NetworkSecurityConfig   com.example.myapplication            D  No Network Security Config specified, using platform default
+2022-12-03 22:55:42.385  6556-6556  ActivityThread          com.example.myapplication            I  handleStopService: token=android.os.BinderProxy@354aa71 not found.
+2022-12-03 22:55:47.109  6556-6565  System                  com.example.myapplication            W  A resource failed to call close. 

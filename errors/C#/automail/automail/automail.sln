@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "automail", "automail.csproj", "{932D610C-C515-420D-9AD3-FCD65BD49BDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{932D610C-C515-420D-9AD3-FCD65BD49BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{932D610C-C515-420D-9AD3-FCD65BD49BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{932D610C-C515-420D-9AD3-FCD65BD49BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{932D610C-C515-420D-9AD3-FCD65BD49BDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34152F61-31A1-4B06-9F38-E8C1B8DA2FE2}
+	EndGlobalSection
+EndGlobal

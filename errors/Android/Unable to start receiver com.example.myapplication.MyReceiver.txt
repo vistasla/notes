@@ -1,0 +1,25 @@
+ E  FATAL EXCEPTION: main
+                                                                                                    Process: com.example.myapplication, PID: 6676
+                                                                                                    java.lang.RuntimeException: Unable to start receiver com.example.myapplication.MyReceiver: java.lang.UnsupportedOperationException: Not yet implemented
+                                                                                                    	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4345)
+                                                                                                    	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2154)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201)
+                                                                                                    	at android.os.Looper.loop(Looper.java:288)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:7898)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+                                                                                                    Caused by: java.lang.UnsupportedOperationException: Not yet implemented
+                                                                                                    	at com.example.myapplication.MyReceiver.onReceive(MyReceiver.java:17)
+                                                                                                    	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4336)
+                                                                                                    	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0) 
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2154) 
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106) 
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201) 
+                                                                                                    	at android.os.Looper.loop(Looper.java:288) 
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:7898) 
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method) 
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548) 
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936) 

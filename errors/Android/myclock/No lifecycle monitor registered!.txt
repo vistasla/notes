@@ -1,0 +1,1 @@
+Caused by: java.lang.IllegalStateException: No lifecycle monitor registered! Are you running under an Instrumentation which registers lifecycle monitors?

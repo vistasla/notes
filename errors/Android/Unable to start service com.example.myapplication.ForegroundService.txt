@@ -1,0 +1,23 @@
+FATAL EXCEPTION: main
+                                                                                                    Process: com.example.myapplication, PID: 7371
+                                                                                                    java.lang.RuntimeException: Unable to start service com.example.myapplication.ForegroundService@4ac748d with Intent { cmp=com.example.myapplication/.ForegroundService }: java.lang.IllegalArgumentException: com.example.myapplication: Targeting S+ (version 31 and above) requires that one of FLAG_IMMUTABLE or FLAG_MUTABLE be specified when creating a PendingIntent.
+                                                                                                    Strongly consider using FLAG_IMMUTABLE, only use FLAG_MUTABLE if some functionality depends on the PendingIntent being mutable, e.g. if it needs to be used with inline replies or bubbles.
+                                                                                                    	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:4703)
+                                                                                                    	at android.app.ActivityThread.-$$Nest$mhandleServiceArgs(Unknown Source:0)
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2181)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201)
+                                                                                                    	at android.os.Looper.loop(Looper.java:288)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:7898)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+                                                                                                    Caused by: java.lang.IllegalArgumentException: com.example.myapplication: Targeting S+ (version 31 and above) requires that one of FLAG_IMMUTABLE or FLAG_MUTABLE be specified when creating a PendingIntent.
+                                                                                                    Strongly consider using FLAG_IMMUTABLE, only use FLAG_MUTABLE if some functionality depends on the PendingIntent being mutable, e.g. if it needs to be used with inline replies or bubbles.
+                                                                                                    	at android.app.PendingIntent.checkFlags(PendingIntent.java:401)
+                                                                                                    	at android.app.PendingIntent.getActivityAsUser(PendingIntent.java:484)
+                                                                                                    	at android.app.PendingIntent.getActivity(PendingIntent.java:470)
+                                                                                                    	at android.app.PendingIntent.getActivity(PendingIntent.java:434)
+                                                                                                    	at com.example.myapplication.ForegroundService.onStartCommand(ForegroundService.java:26)
+                                                                                                    	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:4685)
+                                                                                                    	... 9 more

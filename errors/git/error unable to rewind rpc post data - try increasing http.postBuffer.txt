@@ -1,0 +1,8 @@
+POST git-receive-pack (chunked)
+error: unable to rewind rpc post data - try increasing http.postBuffer
+error: RPC failed; curl 56 OpenSSL SSL_read: Connection was reset, errno 10054
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Pushing to https://gitee.com/haoxiaodong1991/myprojects_2.git
+Everything up-to-date
+
